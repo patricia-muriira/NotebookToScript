@@ -55,3 +55,6 @@ print(classification_report(y_test, y_predict))
 cm = confusion_matrix(y_predict, y_test)
 sns.heatmap(cm, annot = True)
 plt.show()
+
+#add loggers
+#modularize
