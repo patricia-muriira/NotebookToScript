@@ -74,18 +74,5 @@ model = TrainModel(X_train, y_train)
 train_score, test_score = EvaluateModel(
     model, X_train, y_train, X_test, y_test)
 
-<<<<<<< HEAD
 print(f"Training Score: {train_score}")
 print(f"Test Score: {test_score}")
-=======
-#clasification report
-y_predict = model.predict(X_test)
-print(classification_report(y_test, y_predict))
-#confusion matrix
-cm = confusion_matrix(y_predict, y_test)
-sns.heatmap(cm, annot = True)
-plt.show()
-
-#add loggers
-#modularize
->>>>>>> 1ca189bc83c5fc7f9cb58304abcc8c8456506822
